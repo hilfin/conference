@@ -129,7 +129,7 @@ class ProfileTab extends AbstractDialogTab<Props> {
                                 ({ target: { value } }) =>
                                     super._onChange({ email: value })
                             }
-                            placeholder = 'jojo'
+                            placeholder = 'George'
                             shouldFitContainer = { true }
                             type = 'text'
                             value = { email } />
