@@ -87,7 +87,7 @@ var interfaceConfig = {
     DISABLE_VIDEO_BACKGROUND: false,
 
     DISPLAY_WELCOME_PAGE_CONTENT: false,
-    DISPLAY_WELCOME_PAGE_TOOLBAR_ADDITIONAL_CONTENT: true,
+    DISPLAY_WELCOME_PAGE_TOOLBAR_ADDITIONAL_CONTENT: false,
 
     ENABLE_DIAL_OUT: true,
 
@@ -100,7 +100,7 @@ var interfaceConfig = {
      */
     filmStripOnly: false,
 
-    GENERATE_ROOMNAMES_ON_WELCOME_PAGE: true,
+    GENERATE_ROOMNAMES_ON_WELCOME_PAGE: false,
 
     /**
      * Hide the logo on the deep linking pages.
@@ -167,7 +167,7 @@ var interfaceConfig = {
 
     SHOW_DEEP_LINKING_IMAGE: false,
     SHOW_JITSI_WATERMARK: false,
-    SHOW_POWERED_BY: true,
+    SHOW_POWERED_BY: false,
     SHOW_PROMOTIONAL_CLOSE_PAGE: true,
     SHOW_WATERMARK_FOR_GUESTS: true, // if watermark is disabled by default, it can be shown only for guests
 
