@@ -2,7 +2,7 @@
 /* eslint sort-keys: ["error", "asc", {"caseSensitive": false}] */
 
 var interfaceConfig = {
-    APP_NAME: 'HilFin Meet',
+    APP_NAME: 'jocon.ml',
     AUDIO_LEVEL_PRIMARY_COLOR: 'rgba(255,255,255,0.4)',
     AUDIO_LEVEL_SECONDARY_COLOR: 'rgba(255,255,255,0.2)',
 
@@ -15,9 +15,9 @@ var interfaceConfig = {
      * Note: this mode is experimental and subject to breakage.
      */
     AUTO_PIN_LATEST_SCREEN_SHARE: 'remote-only',
-    BRAND_WATERMARK_LINK: '',
+    BRAND_WATERMARK_LINK: 'images/connect_logo.png',
 
-    CLOSE_PAGE_GUEST_HINT: false, // A html text to be shown to guests on the close page, false disables it
+    CLOSE_PAGE_GUEST_HINT: true, // A html text to be shown to guests on the close page, false disables it
     /**
      * Whether the connection indicator icon should hide itself based on
      * connection strength. If true, the connection indicator will remain
@@ -46,9 +46,9 @@ var interfaceConfig = {
 
     DEFAULT_BACKGROUND: '#474747',
     DEFAULT_LOCAL_DISPLAY_NAME: 'me',
-    DEFAULT_LOGO_URL: 'images/watermark.png',
+    DEFAULT_LOGO_URL: 'images/connect_logo.png',
     DEFAULT_REMOTE_DISPLAY_NAME: 'Fellow Joeite',
-    DEFAULT_WELCOME_PAGE_LOGO_URL: 'images/watermark.png',
+    DEFAULT_WELCOME_PAGE_LOGO_URL: 'images/connect_logo.png',
 
     DISABLE_DOMINANT_SPEAKER_INDICATOR: false,
 
@@ -86,12 +86,12 @@ var interfaceConfig = {
      */
     DISABLE_VIDEO_BACKGROUND: false,
 
-    DISPLAY_WELCOME_PAGE_CONTENT: true,
-    DISPLAY_WELCOME_PAGE_TOOLBAR_ADDITIONAL_CONTENT: false,
+    DISPLAY_WELCOME_PAGE_CONTENT: false,
+    DISPLAY_WELCOME_PAGE_TOOLBAR_ADDITIONAL_CONTENT: true,
 
     ENABLE_DIAL_OUT: true,
 
-    ENABLE_FEEDBACK_ANIMATION: false, // Enables feedback star animation.
+    ENABLE_FEEDBACK_ANIMATION: true, // Enables feedback star animation.
 
     FILM_STRIP_MAX_HEIGHT: 120,
 
@@ -113,7 +113,7 @@ var interfaceConfig = {
     HIDE_INVITE_MORE_HEADER: false,
 
     INITIAL_TOOLBAR_TIMEOUT: 20000,
-    JITSI_WATERMARK_LINK: 'https://jitsi.org',
+    JITSI_WATERMARK_LINK: 'https://jocon.ml/',
 
     LANG_DETECTION: true, // Allow i18n to detect the system language
     LIVE_STREAMING_HELP_LINK: 'https://jitsi.org/live', // Documentation reference for the live streaming feature.
@@ -136,7 +136,7 @@ var interfaceConfig = {
      */
     MOBILE_APP_PROMO: true,
 
-    NATIVE_APP_NAME: 'HilFin Team',
+    NATIVE_APP_NAME: 'jocon.ml',
 
     // Names of browsers which should show a warning stating the current browser
     // has a suboptimal experience. Browsers which are not listed as optimal or
@@ -145,7 +145,7 @@ var interfaceConfig = {
     OPTIMAL_BROWSERS: [ 'chrome', 'chromium', 'firefox', 'nwjs', 'electron', 'safari' ],
 
     POLICY_LOGO: null,
-    PROVIDER_NAME: 'Jitsi',
+    PROVIDER_NAME: 'jocon.ml',
 
     /**
      * If true, will display recent list
@@ -156,7 +156,7 @@ var interfaceConfig = {
     REMOTE_THUMBNAIL_RATIO: 1, // 1:1
 
     SETTINGS_SECTIONS: [ 'devices', 'language', 'moderator', 'profile', 'calendar' ],
-    SHOW_BRAND_WATERMARK: false,
+    SHOW_BRAND_WATERMARK: true,
 
     /**
     * Decides whether the chrome extension banner should be rendered on the landing page and during the meeting.
@@ -166,9 +166,9 @@ var interfaceConfig = {
     SHOW_CHROME_EXTENSION_BANNER: false,
 
     SHOW_DEEP_LINKING_IMAGE: false,
-    SHOW_JITSI_WATERMARK: true,
-    SHOW_POWERED_BY: false,
-    SHOW_PROMOTIONAL_CLOSE_PAGE: false,
+    SHOW_JITSI_WATERMARK: false,
+    SHOW_POWERED_BY: true,
+    SHOW_PROMOTIONAL_CLOSE_PAGE: true,
     SHOW_WATERMARK_FOR_GUESTS: true, // if watermark is disabled by default, it can be shown only for guests
 
     /*
