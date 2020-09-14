@@ -1,9 +1,9 @@
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="42.000000pt" height="42.000000pt" viewBox="0 0 42.000000 42.000000"
+ width="45.000000pt" height="45.000000pt" viewBox="0 0 32.000000 32.000000"
  preserveAspectRatio="xMidYMid meet">
 <title>chat</title>
-<g transform="translate(0.000000,42.000000) scale(0.100000,-0.100000)"
-fill="#545490" stroke="none">
+<g transform="translate(0.000000,32.000000) scale(0.100000,-0.100000)"
+fill="#444482" stroke="none">
 <path d="M76 238 c-11 -15 -16 -46 -16 -95 l0 -73 79 0 c106 0 131 26 118 121
 -8 61 -20 69 -98 69 -59 0 -70 -3 -83 -22z m129 -73 c0 -16 -8 -21 -39 -23
 -43 -4 -62 8 -52 33 4 12 16 15 48 13 35 -2 43 -7 43 -23z"/>
