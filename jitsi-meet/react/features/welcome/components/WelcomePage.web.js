@@ -184,7 +184,7 @@ class WelcomePage extends AbstractWelcomePage {
                         }
                     </div>
                     <div className = 'header-image' />
-                    <div className = 'header-text'>
+                    {/* <div className = 'header-text'>
                         <h1 className = 'header-text-title'>
                             { t('welcomepage.title') }
                         </h1>
@@ -192,7 +192,27 @@ class WelcomePage extends AbstractWelcomePage {
                             { t('welcomepage.appDescription',
                                 { app: APP_NAME }) }
                         </p>
+                    </div> */}
+
+
+                    <div class="main">
+                    <div class="section1"> 
+                        <div class="menu">
+                        <ul>
+                            <li>home</li>
+                            <li>home</li>
+                            <li>home</li>
+                        </ul>
+                        </div>
                     </div>
+
+                    <div class="section2">
+
+                    <div className="header-time">
+                        <h1>12:34PM</h1>
+                        <p>wednesday</p>
+                    </div>
+                    <br></br>
 
                     <div className='header-icons'>
                         <div>
@@ -216,8 +236,11 @@ class WelcomePage extends AbstractWelcomePage {
                         </div>          
                     </div>
 
+                    </div>
+                    </div>
 
-                    <div id = 'enter_room'>
+
+                    {/* <div id = 'enter_room'>
                         <div className = 'enter-room-input-container'>
                             <div className = 'enter-room-title'>
                                 { t('welcomepage.enterRoomTitle') }
@@ -247,7 +270,7 @@ class WelcomePage extends AbstractWelcomePage {
                                     : t('welcomepage.go')
                             }
                         </div>
-                    </div>
+                    </div> */}
                     { _moderatedRoomServiceUrl && (
                         <div id = 'moderated-meetings'>
                             <p>
