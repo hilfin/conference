@@ -194,15 +194,28 @@ class WelcomePage extends AbstractWelcomePage {
                         </p>
                     </div>
 
-                    <div className ='header-icons'>
-                       <div>
-                       <img id="enter_room_button" className = 'logo'
-                                    src = 'images/home.png' />
-                        <span>Start Meeting</span>
-                       </div>
-                        
+                    <div className='header-icons'>
+                        <div>
+                            <img id="enter_room_button" className='jx-icon' src='images/home.png'/>
+                        <p>Start </p>
+                        </div> 
 
+                        <div>
+                            <img  className='jx-icon' src='images/join.png'/>
+                        <p>Join </p>
+                        </div>
+
+                        <div>
+                            <img  className='jx-icon' src='images/schedule.png'/>
+                        <p>Schedule </p>
+                        </div>
+
+                        <div>
+                            <img className='jx-icon' src='images/sharescreen.png'/>
+                        <p>Screenshare </p>
+                        </div>          
                     </div>
+
 
                     <div id = 'enter_room'>
                         <div className = 'enter-room-input-container'>

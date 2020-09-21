@@ -36,6 +36,28 @@ body.welcome-page {
             z-index: $zindex2;
         }
 
+        .header-icons {
+            width: 80%;
+            height:100px;
+            display: flex;
+            padding:5px;
+          
+            justify-content: space-between;
+            background: #fff;
+            border-radius:5px;
+            align-items:center;
+          }
+          .header-icons p {
+            margin:0 auto;
+            text-align: center;
+          
+          }
+          
+          .jx-icon {
+            width:60px;
+            height:60px;
+          }
+
         .header-text-title {
             color: $welcomePageTitleColor;
             font-size: $welcomePageHeaderTextTitleFontSize;
