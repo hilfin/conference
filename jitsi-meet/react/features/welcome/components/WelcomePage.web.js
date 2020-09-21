@@ -193,6 +193,17 @@ class WelcomePage extends AbstractWelcomePage {
                                 { app: APP_NAME }) }
                         </p>
                     </div>
+
+                    <div className ='header-icons'>
+                       <div>
+                       <img id="enter_room_button" className = 'logo'
+                                    src = 'images/home.png' />
+                        <span>Start Meeting</span>
+                       </div>
+                        
+
+                    </div>
+
                     <div id = 'enter_room'>
                         <div className = 'enter-room-input-container'>
                             <div className = 'enter-room-title'>
