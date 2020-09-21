@@ -199,9 +199,12 @@ class WelcomePage extends AbstractWelcomePage {
                     <div class="section1"> 
                         <div class="menu">
                         <ul>
-                            <li>home</li>
-                            <li>home</li>
-                            <li>home</li>
+                            <li>
+                                <button> Home </button>
+                            </li>
+                            <li>Chat</li>
+                            <li>Meetings</li>
+                            <li>Settings</li>
                         </ul>
                         </div>
                     </div>
