@@ -37,13 +37,11 @@ body.welcome-page {
         }
 
         .header-icons {
-            width: 50%;
-            height:100px;
+            width: 80%;
+            height:300px;
             display: flex;
             padding:10px;
 
-            position: relative;
-            top: 100px;
           
             justify-content: space-around;
             background: #fff;
@@ -77,14 +75,14 @@ body.welcome-page {
           }
 
           
-ul {
-    text-decoration: none;
-    list-style: none;
-  }
+
   
   .main {
     display:flex;
     justify-content: center;
+    position: relative;
+    top: 100px;
+    width: 100%;
   }
   
   .section1 {
