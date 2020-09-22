@@ -119,6 +119,11 @@ body.welcome-page {
     margin-right: 5px;
 
   }
+  .flex-div {
+    display: flex;
+    justify-content: center;
+  }
+  
         .header-text-title {
             color: $welcomePageTitleColor;
             font-size: $welcomePageHeaderTextTitleFontSize;

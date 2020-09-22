@@ -223,11 +223,15 @@ class WelcomePage extends AbstractWelcomePage {
                         <div class="menu">
                         <ul>
                             <li>
-                            <a><img src='images/icon-home.png' /><span>Home</span> </a>
+                            <div class="flex-div">
+                            <img src='images/icon-home.png' />
+                            <span>Home</span> 
+                            </div>
+                            
                             </li>
-                            <li><a><img src='images/icon-chat.png' /><span>Chat</span> </a></li>
-                            <li><a><img src='images/icon-meetings.png' /><span>Meetings</span> </a></li>
-                            <li><a><img src='images/icon-settings.png' /><span>Settings</span> </a></li>
+                            <li><div class="flex-div"><img src='images/icon-chat.png' /><span>Chat</span> </div></li>
+                            <li><div class="flex-div"><img src='images/icon-meetings.png' /><span>Meetings</span> </div></li>
+                            <li><div class="flex-div"><img src='images/icon-settings.png' /><span>Settings</span> </div></li>
                         </ul>
                         </div>
                     </div>
