@@ -168,7 +168,7 @@ class WelcomePage extends AbstractWelcomePage {
         hours = hours ? hours : 12;  
         minutes = minutes < 10 ? '0' + minutes : minutes; 
         
-        return [hours + ':' + minutes + ' ' + newformat,weekday[date.getDay()], month[d.getMonth()],date.getDate(), ]; 
+        return [hours + ':' + minutes + ' ' + newformat,weekday[date.getDay()], month[date.getMonth()],date.getDate(), ]; 
           
     }
 
