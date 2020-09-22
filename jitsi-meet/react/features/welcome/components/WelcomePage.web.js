@@ -151,6 +151,27 @@ class WelcomePage extends AbstractWelcomePage {
         document.body.classList.remove('welcome-page');
     }
 
+     fnDisplayTime() { 
+        var date = new Date(); 
+        var hours = date.getHours(); 
+        var minutes = date.getMinutes(); 
+        var weekday = ['Sunday', 'Monday','Tuesday','Wednesday','Thursday', 'Friday', 'Saturday'];;
+       
+        
+        // Check whether AM or PM 
+        var newformat = hours >= 12 ? 'PM' : 'AM';  
+        
+        // Find current hour in AM-PM Format 
+        hours = hours % 12;  
+        
+        // To display "0" as "12" 
+        hours = hours ? hours : 12;  
+        minutes = minutes < 10 ? '0' + minutes : minutes; 
+        
+        return [hours + ':' + minutes + ' ' + newformat,weekday[date.getDay()] ]; 
+          
+    }
+
     /**
      * Implements React's {@link Component#render()}.
      *
@@ -163,6 +184,8 @@ class WelcomePage extends AbstractWelcomePage {
         const showAdditionalContent = this._shouldShowAdditionalContent();
         const showAdditionalToolbarContent = this._shouldShowAdditionalToolbarContent();
         const showResponsiveText = this._shouldShowResponsiveText();
+    
+        let currentTimeInfo = this.fnDisplayTime(); 
 
         return (
             <div
@@ -212,8 +235,8 @@ class WelcomePage extends AbstractWelcomePage {
                     <div class="section2">
 
                     <div className="header-time">
-                        <h1>12:34PM</h1>
-                        <p>wednesday</p>
+                      <h1>{ currentTimeInfo[0]}</h1>
+                        <p>currentTimeInfo[1]</p>
                     </div>
                     <br></br>
 
