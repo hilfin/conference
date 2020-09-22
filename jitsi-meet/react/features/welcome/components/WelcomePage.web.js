@@ -156,7 +156,7 @@ class WelcomePage extends AbstractWelcomePage {
         var hours = date.getHours(); 
         var minutes = date.getMinutes(); 
         var weekday = ['Sunday', 'Monday','Tuesday','Wednesday','Thursday', 'Friday', 'Saturday'];;
-       
+        var month = ['January','February', 'March', 'April', 'May', 'June', 'July', 'August','September','October','November','December'];
         
         // Check whether AM or PM 
         var newformat = hours >= 12 ? 'PM' : 'AM';  
@@ -168,7 +168,7 @@ class WelcomePage extends AbstractWelcomePage {
         hours = hours ? hours : 12;  
         minutes = minutes < 10 ? '0' + minutes : minutes; 
         
-        return [hours + ':' + minutes + ' ' + newformat,weekday[date.getDay()] ]; 
+        return [hours + ':' + minutes + ' ' + newformat,weekday[date.getDay()], month[d.getMonth()],date.getDate(), ]; 
           
     }
 
@@ -240,7 +240,7 @@ class WelcomePage extends AbstractWelcomePage {
 
                     <div className="header-time">
                       <h1>{ currentTimeInfo[0]}</h1>
-                        <p>{currentTimeInfo[1]}</p>
+                        <p>{currentTimeInfo[1]+ ','+currentTimeInfo[2]+ ' '+ currentTimeInfo[3] }</p>
                     </div>
                     <br></br>
 
@@ -270,7 +270,7 @@ class WelcomePage extends AbstractWelcomePage {
                     </div>
 
 
-                    {/* <div id = 'enter_room'>
+                    { <div id = 'enter_room'>
                         <div className = 'enter-room-input-container'>
                             <div className = 'enter-room-title'>
                                 { t('welcomepage.enterRoomTitle') }
@@ -300,7 +300,7 @@ class WelcomePage extends AbstractWelcomePage {
                                     : t('welcomepage.go')
                             }
                         </div>
-                    </div> */}
+                    </div> }
                     { _moderatedRoomServiceUrl && (
                         <div id = 'moderated-meetings'>
                             <p>

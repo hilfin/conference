@@ -100,7 +100,7 @@ var interfaceConfig = {
      */
     filmStripOnly: false,
 
-    GENERATE_ROOMNAMES_ON_WELCOME_PAGE: false,
+    GENERATE_ROOMNAMES_ON_WELCOME_PAGE: true,
 
     /**
      * Hide the logo on the deep linking pages.
