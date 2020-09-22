@@ -87,23 +87,38 @@ body.welcome-page {
   }
   
   .section1 {
-    width:15%;
+    width:20%;
     text-align:center;
     background: #fff;;
   }
   .section2 {
-    width:80%;
+    width:70%;
     padding-left: 10%;
   }
   .menu ul {
       list-style: none;
       margin: 10px 0px;
       padding: 10px 0px;
+      
   }
   .menu ul > li{
     margin: 10px 0px;
+    width: 70%;
+    color: #000;
+    padding: 2px;
+    margin: 0 auto;;
 }
 
+.menu ul>li:hover {
+    background: #ccc;
+    border-radius: 5px;
+}
+.menu img {
+    width:15px;
+    height:15px;
+    margin-right: 5px;
+
+  }
         .header-text-title {
             color: $welcomePageTitleColor;
             font-size: $welcomePageHeaderTextTitleFontSize;

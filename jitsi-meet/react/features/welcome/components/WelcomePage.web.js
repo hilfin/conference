@@ -223,11 +223,11 @@ class WelcomePage extends AbstractWelcomePage {
                         <div class="menu">
                         <ul>
                             <li>
-                                <button> Home </button>
+                            <a><img src='images/icon-home.png' /><span>Home</span> </a>
                             </li>
-                            <li>Chat</li>
-                            <li>Meetings</li>
-                            <li>Settings</li>
+                            <li><a><img src='images/icon-chat.png' /><span>Chat</span> </a></li>
+                            <li><a><img src='images/icon-meetings.png' /><span>Meetings</span> </a></li>
+                            <li><a><img src='images/icon-settings.png' /><span>Settings</span> </a></li>
                         </ul>
                         </div>
                     </div>
@@ -236,7 +236,7 @@ class WelcomePage extends AbstractWelcomePage {
 
                     <div className="header-time">
                       <h1>{ currentTimeInfo[0]}</h1>
-                        <p>currentTimeInfo[1]</p>
+                        <p>{currentTimeInfo[1]}</p>
                     </div>
                     <br></br>
 
