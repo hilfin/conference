@@ -223,11 +223,11 @@ class WelcomePage extends AbstractWelcomePage {
                         <div class="menu">
                         <ul>
                             <li>
-                            <div class="flex-div">
+                            <a href="http://13.233.100.253:5000/"><div class="flex-div">
                             <img src='images/icon-home.png' />
                             <span>Home</span> 
                             </div>
-                            
+                            </a>
                             </li>
                             <li><div class="flex-div"><img src='images/icon-chat.png' /><span>Chat</span> </div></li>
                             <li><div class="flex-div"><img src='images/icon-meetings.png' /><span>Meetings</span> </div></li>
@@ -277,6 +277,7 @@ class WelcomePage extends AbstractWelcomePage {
                             </div>
                             <form onSubmit = { this._onFormSubmit }>
                                 <input
+                                    disabled = {true}
                                     autoFocus = { true }
                                     className = 'enter-room-input'
                                     id = 'enter_room_field'

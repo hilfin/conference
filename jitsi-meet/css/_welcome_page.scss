@@ -38,7 +38,7 @@ body.welcome-page {
 
         .header-icons {
             width: 80%;
-            height:200px;
+            height:150px;
             display: flex;
             padding:10px;
 
@@ -152,6 +152,10 @@ body.welcome-page {
             background-color: #fff;
             padding: $welcomePageEnterRoomPadding;
             border-radius: $welcomePageEnterRoomBorderRadius;
+            position: relative;
+            top: 120px;
+            margin-left: 13%;
+            border-radius: 5px;
 
             .enter-room-input-container {
                 width: 100%;
