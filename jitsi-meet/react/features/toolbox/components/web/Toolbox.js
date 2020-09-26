@@ -1310,9 +1310,13 @@ class Toolbox extends Component<Props, State> {
                                 toggled = { _chatOpen }
                                 tooltip = { t('toolbar.chat') } />
                             <ChatCounter />
+                            <LiveStreamButton
+                                key = 'livestreaming'
+                                showLabel = { true } />
                         </div> }
                     { buttonsLeft.indexOf('desktop') !== -1
                         && this._renderDesktopSharingButton() }
+                    
                     { buttonsLeft.indexOf('raisehand') !== -1
                         && <ToolbarButton
                             accessibilityLabel = { t('toolbar.accessibilityLabel.raiseHand') }
