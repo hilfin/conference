@@ -1314,6 +1314,14 @@ class Toolbox extends Component<Props, State> {
                                 key = 'livestreaming'
                                 showLabel = { false } 
                                 tooltip = { t('toolbar.startLiveStreaming') }/>
+                            <RecordButton
+                                key = 'record'
+                                showLabel = { false } />
+                            <SettingsButton
+                            key = 'settings'
+                            showLabel = { false }
+                            visible = { this._shouldShowButton('settings') } />
+
                         </div> }
                     { buttonsLeft.indexOf('desktop') !== -1
                         && this._renderDesktopSharingButton() }
