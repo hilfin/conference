@@ -40,7 +40,7 @@
         "none": "No audio devices available"
     },
     "audioOnly": {
-        "audioOnly": "Low bandwidth"
+        "audioOnly": "call"
     },
     "calendarSync": {
         "addMeetingURL": "Add a meeting link",
