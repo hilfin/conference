@@ -316,7 +316,7 @@ class VideoQualitySlider extends Component<Props> {
         }
 
         const matchingOption = _sliderOptions.find(
-            ({ videoQuality }) => videoQuality === _sendrecvVideoQuality);
+            ({ videoQuality }) => videoQuality === LOW);
 
         return _sliderOptions.indexOf(matchingOption);
     }
