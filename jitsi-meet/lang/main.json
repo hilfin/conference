@@ -12,7 +12,7 @@
         "failedToAdd": "Failed to add participants",
         "footerText": "Dialing out is disabled.",
         "googleEmail": "Google Email",
-        "inviteMoreHeader": "",
+        "inviteMoreHeader": " ",
         "inviteMoreMailSubject": "Join {{appName}} meeting",
         "inviteMorePrompt": "Invite more people",
         "linkCopied": "Link copied to clipboard",

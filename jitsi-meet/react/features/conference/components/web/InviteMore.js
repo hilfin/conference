@@ -52,9 +52,9 @@ function InviteMore({
     return (
         _visible
             ? <div className = { `invite-more-container${_tileViewEnabled ? ' elevated' : ''}` }>
-                <div className = 'invite-more-header'>
+                {/* <div className = 'invite-more-header'>
                     {t('addPeople.inviteMoreHeader')}
-                </div>
+                </div> */}
                 <div
                     className = 'invite-more-button'
                     onClick = { onClick }>
