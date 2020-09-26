@@ -1312,7 +1312,8 @@ class Toolbox extends Component<Props, State> {
                             <ChatCounter />
                             <LiveStreamButton
                                 key = 'livestreaming'
-                                showLabel = { true } />
+                                showLabel = { false } 
+                                tooltip = { t('toolbar.startLiveStreaming') }/>
                         </div> }
                     { buttonsLeft.indexOf('desktop') !== -1
                         && this._renderDesktopSharingButton() }
