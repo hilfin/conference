@@ -25,7 +25,7 @@
         "none": ""
     },
     "audioOnly": {
-        "audioOnly": "Audio only"
+        "audioOnly": "Call"
     },
     "calendarSync": {
         "addMeetingURL": "Add a meeting link",
