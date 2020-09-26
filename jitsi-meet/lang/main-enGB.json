@@ -215,7 +215,7 @@
         "passwordLabel": "Password",
         "passwordNotSupported": "Setting a meeting password is not supported.",
         "passwordNotSupportedTitle": "Password not supported",
-        "passwordRequired": "Password required",
+        "passwordRequired": "Password Authentication",
         "popupError": "Your browser is blocking pop-up windows from this site. Please enable pop-ups in your browser's security settings and try again.",
         "popupErrorTitle": "Pop-up blocked",
         "recording": "Recording",
