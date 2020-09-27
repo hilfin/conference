@@ -188,15 +188,40 @@ class WelcomePage extends AbstractWelcomePage {
         let currentTimeInfo = this.fnDisplayTime(); 
 
         return (
-            <div
-                className = { `welcome ${showAdditionalContent
-                    ? 'with-content' : 'without-content'}` }
-                id = 'welcome_page'>
-                <div className = 'welcome-watermark'>
+
+
+
+            <div className="height" id = 'welcome_page'>
+            <div className="left">
+              <div className="logo">
+                
+                 <div className = 'welcome-watermark'>
                     <Watermarks defaultJitsiLogoURL = { DEFAULT_WELCOME_PAGE_LOGO_URL } />
                 </div>
-                <div className = 'header'>
-                    <div className = 'welcome-page-settings'>
+              </div>
+              <div className="menu">
+                <ul>
+                  <li><a href="http://13.233.100.253:5000/">
+                      <div className="flex-div">
+                        <img src='images/icon-home.png'/><span>Home</span> </div>
+                    </a> </li>
+                  <li><a>
+                      <div className="flex-div"><img src="images/icon-chat.png"/><span>Chat</span> </div>
+                    </a> </li>
+                  <li><a>
+                      <div className="flex-div"><img src="images/icon-meetings.png"/><span>Meeting</span> </div>
+                    </a> </li>
+                    <li><a>
+                      <div className="flex-div"><img src="images/icon-settings.png"/><span>Settings</span> </div>
+                    </a> </li>
+                </ul>
+              </div>
+            </div>
+        
+        
+        
+            <div className="right">
+            <div className = 'welcome-page-settings'>
                         <SettingsButton
                             defaultTab = { SETTINGS_TABS.CALENDAR } />
                         { showAdditionalToolbarContent
@@ -206,71 +231,38 @@ class WelcomePage extends AbstractWelcomePage {
                             : null
                         }
                     </div>
-                    <div className = 'header-image' />
-                    {/* <div className = 'header-text'>
-                        <h1 className = 'header-text-title'>
-                            { t('welcomepage.title') }
-                        </h1>
-                        <p className = 'header-text-description'>
-                            { t('welcomepage.appDescription',
-                                { app: APP_NAME }) }
-                        </p>
-                    </div> */}
-
-
-                    <div class="main">
-                    <div class="section1"> 
-                        <div class="menu">
-                        <ul>
-                            <li>
-                            <a href="http://13.233.100.253:5000/"><div class="flex-div">
-                            <img src='images/icon-home.png' />
-                            <span>Home</span> 
-                            </div>
-                            </a>
-                            </li>
-                            <li><div class="flex-div"><img src='images/icon-chat.png' /><span>Chat</span> </div></li>
-                            <li><div class="flex-div"><img src='images/icon-meetings.png' /><span>Meetings</span> </div></li>
-                            <li><div class="flex-div"><img src='images/icon-settings.png' /><span>Settings</span> </div></li>
-                        </ul>
-                        </div>
-                    </div>
-
-                    <div class="section2">
-
-                    <div className="header-time">
-                      <h1>{ currentTimeInfo[0]}</h1>
-                        <p>{currentTimeInfo[1]+ ','+currentTimeInfo[2]+ ' '+ currentTimeInfo[3] }</p>
-                    </div>
-                    <br></br>
-
-                    <div className='header-icons'>
-                        <div>
-                            <img id="enter_room_button" className='jx-icon' src='images/home.png'/>
-                        <p>Start </p>
-                        </div> 
-
-                        <div>
-                            <img  className='jx-icon' src='images/join.png'/>
-                        <p>Join </p>
-                        </div>
-
-                        <div>
-                            <img  className='jx-icon' src='images/schedule.png'/>
-                        <p>Schedule </p>
-                        </div>
-
-                        <div>
-                            <img className='jx-icon' src='images/sharescreen.png'/>
-                        <p>Screenshare </p>
-                        </div>          
-                    </div>
-
-                    </div>
-                    </div>
-
-
-                    { <div id = 'enter_room'>
+        
+              <div className="header-time">
+              <h1>{ currentTimeInfo[0]}</h1>
+    <p>{currentTimeInfo[1]+ ','+currentTimeInfo[2]+ ' '+ currentTimeInfo[3] }</p>
+              </div>
+              <br/>
+              <div className="header-icons">
+                <div>
+                  <img className="jx-icon" src="images/home.png"/>
+                  <p>Start</p>
+                </div>
+                <div>
+                  <img className="jx-icon" src="images/join.png"/>
+                  <p>Join</p>
+                </div>
+        
+                <div>
+                  <img className="jx-icon" src="images/schedule.png"/>
+                  <p>Schedule</p>
+                </div>
+                <div>
+                  <img className="jx-icon" src="images/sharescreen.png"/>
+                  <p>Screenshare</p>
+                </div>
+        
+             
+        
+              </div>
+        
+            <div className="url-div">
+                
+            { <div id = 'enter_room'>
                         <div className = 'enter-room-input-container'>
                             <div className = 'enter-room-title'>
                                 { t('welcomepage.enterRoomTitle') }
@@ -312,14 +304,18 @@ class WelcomePage extends AbstractWelcomePage {
                             </p>
                         </div>
                     ) }
-                    { this._renderTabs() }
-                </div>
-                { showAdditionalContent
-                    ? <div
-                        className = 'welcome-page-content'
-                        ref = { this._setAdditionalContentRef } />
-                    : null }
+
             </div>
+        
+        
+            </div>
+        
+         
+        
+          </div>
+
+
+
         );
     }
 
