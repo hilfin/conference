@@ -1314,13 +1314,7 @@ class Toolbox extends Component<Props, State> {
                                 key = 'livestreaming'
                                 showLabel = { false } 
                                 tooltip = { t('toolbar.startLiveStreaming') }/>
-                            <RecordButton
-                                key = 'record'
-                                showLabel = { false } />
-                            <SettingsButton
-                            key = 'settings'
-                            showLabel = { false }
-                            visible = { this._shouldShowButton('settings') } />
+                            
 
                         </div> }
                     { buttonsLeft.indexOf('desktop') !== -1
@@ -1353,6 +1347,13 @@ class Toolbox extends Component<Props, State> {
                     }
                     { buttonsRight.indexOf('tileview') !== -1
                         && <TileViewButton /> }
+                    <RecordButton
+                                key = 'record'
+                                showLabel = { false } />
+                    <SettingsButton
+                            key = 'settings'
+                            showLabel = { false }
+                            visible = { this._shouldShowButton('settings') } />
                     { buttonsRight.indexOf('invite') !== -1
                         && <ToolbarButton
                             accessibilityLabel =
