@@ -2,42 +2,7 @@ body.welcome-page {
     background: inherit;
     overflow: auto;
 }
-
-.welcome {
-    background-image: $welcomePageBackground;
-    display: flex;
-    flex-direction: column;
-    font-family: $welcomePageFontFamily;
-    justify-content: space-between;
-    min-height: 100vh;
-    position: relative;
-
-    .header {
-        background-image: $welcomePageHeaderBackground;
-        background-position: $welcomePageHeaderBackgroundPosition;
-        background-repeat: $welcomePageHeaderBackgroundRepeat;
-        background-size: $welcomePageHeaderBackgroundSize;
-        padding-bottom: $welcomePageHeaderPaddingBottom;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        min-height: $welcomePageHeaderMinHeight;
-
-        position: relative;
-        text-align: center;
-
-        .header-text {
-            display: $welcomePageHeaderTextDisplay;
-            flex-direction: column;
-            margin-top: $watermarkHeight + $welcomePageHeaderTextMarginTop;
-            margin-bottom: $welcomePageHeaderTextMarginBottom;
-            max-width: calc(100% - 40px);
-            width: $welcomePageHeaderTextWidth;
-            z-index: $zindex2;
-        }
-
-     
-body {
+main {
 
     display: flex;
     overflow: hidden;
@@ -196,6 +161,41 @@ body {
   }
   }
   
+
+.welcome {
+    background-image: $welcomePageBackground;
+    display: flex;
+    flex-direction: column;
+    font-family: $welcomePageFontFamily;
+    justify-content: space-between;
+    min-height: 100vh;
+    position: relative;
+
+    .header {
+        background-image: $welcomePageHeaderBackground;
+        background-position: $welcomePageHeaderBackgroundPosition;
+        background-repeat: $welcomePageHeaderBackgroundRepeat;
+        background-size: $welcomePageHeaderBackgroundSize;
+        padding-bottom: $welcomePageHeaderPaddingBottom;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        min-height: $welcomePageHeaderMinHeight;
+
+        position: relative;
+        text-align: center;
+
+        .header-text {
+            display: $welcomePageHeaderTextDisplay;
+            flex-direction: column;
+            margin-top: $watermarkHeight + $welcomePageHeaderTextMarginTop;
+            margin-bottom: $welcomePageHeaderTextMarginBottom;
+            max-width: calc(100% - 40px);
+            width: $welcomePageHeaderTextWidth;
+            z-index: $zindex2;
+        }
+
+     
         .header-text-title {
             color: $welcomePageTitleColor;
             font-size: $welcomePageHeaderTextTitleFontSize;

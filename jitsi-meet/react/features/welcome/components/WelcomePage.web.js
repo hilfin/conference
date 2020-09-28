@@ -190,8 +190,8 @@ class WelcomePage extends AbstractWelcomePage {
         return (
 
 
-
-            <div className="height" id = 'welcome_page'>
+<div className="main">
+            <div className="height" id='welcome_page'>
             <div className="left">
               <div className="logo">
                 
@@ -314,7 +314,7 @@ class WelcomePage extends AbstractWelcomePage {
         
           </div>
 
-
+</div>                      
 
         );
     }
