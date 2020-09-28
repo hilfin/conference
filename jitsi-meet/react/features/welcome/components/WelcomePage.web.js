@@ -238,7 +238,8 @@ class WelcomePage extends AbstractWelcomePage {
               </div>
               <br/>
               <div className="header-icons">
-                <div>
+                <div id = 'enter_room_button'
+                            onClick = { this._onFormSubmit }>
                   <img className="jx-icon" src="images/home.png"/>
                   <p>Start</p>
                 </div>
@@ -264,9 +265,9 @@ class WelcomePage extends AbstractWelcomePage {
                 
             { <div id = 'enter_room'>
                         <div className = 'enter-room-input-container'>
-                            <div className = 'enter-room-title'>
+                            {/* <div className = 'enter-room-title'>
                                 { t('welcomepage.enterRoomTitle') }
-                            </div>
+                            </div> */}
                             <form onSubmit = { this._onFormSubmit }>
                                 <input
                                     disabled = {true}
@@ -283,7 +284,7 @@ class WelcomePage extends AbstractWelcomePage {
                                 { this._renderInsecureRoomNameWarning() }
                             </form>
                         </div>
-                        <div
+                        {/* <div
                             className = 'welcome-page-button'
                             id = 'enter_room_button'
                             onClick = { this._onFormSubmit }>
@@ -292,7 +293,7 @@ class WelcomePage extends AbstractWelcomePage {
                                     ? t('welcomepage.goSmall')
                                     : t('welcomepage.go')
                             }
-                        </div>
+                        </div> */}
                     </div> }
                     { _moderatedRoomServiceUrl && (
                         <div id = 'moderated-meetings'>
