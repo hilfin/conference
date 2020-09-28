@@ -192,9 +192,9 @@ class Watermarks extends Component<Props, State> {
 
         if (this.state.showBrandWatermark) {
             reactElement = (
-                // <div
-                //     className = 'watermark rightwatermark'
-                //     style = { _RIGHT_WATERMARK_STYLE } />
+                <div 
+                    className = 'watermark rightwatermark'
+                    style = { _RIGHT_WATERMARK_STYLE } />
             );
 
             const { brandWatermarkLink } = this.state;
