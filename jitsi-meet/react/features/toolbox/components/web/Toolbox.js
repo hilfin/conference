@@ -1317,15 +1317,23 @@ class Toolbox extends Component<Props, State> {
                             
 
                         </div> }
-                        <OverflowMenuItem
-                    accessibilityLabel = { t('toolbar.accessibilityLabel.fullScreen') }
-                    icon = { _fullScreen ? IconExitFullScreen : IconFullScreen }
-                    key = 'fullscreen'
-                    onClick = { this._onToolbarToggleFullScreen }
-                    text = { _fullScreen ? t('toolbar.exitFullScreen') : t('toolbar.enterFullScreen') } />
-                    
                     { buttonsLeft.indexOf('desktop') !== -1
                         && this._renderDesktopSharingButton() }
+                    
+                    
+                        <OverflowMenuProfileItem
+                        key = 'profile'
+                        onClick = { this._onToolbarToggleProfile } />
+                 <OverflowMenuVideoQualityItem
+                        key = 'videoquality'
+                        onClick = { this._onToolbarOpenVideoQuality } />
+                <OverflowMenuItem
+                        accessibilityLabel = { t('toolbar.accessibilityLabel.fullScreen') }
+                        icon = { _fullScreen ? IconExitFullScreen : IconFullScreen }
+                        key = 'fullscreen'
+                        onClick = { this._onToolbarToggleFullScreen }
+                        text = { _fullScreen ? t('toolbar.exitFullScreen') : t('toolbar.enterFullScreen') } />
+                    
                     
                     { buttonsLeft.indexOf('raisehand') !== -1
                         && <ToolbarButton
