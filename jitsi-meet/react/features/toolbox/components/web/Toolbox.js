@@ -1317,6 +1317,13 @@ class Toolbox extends Component<Props, State> {
                             
 
                         </div> }
+                        <OverflowMenuItem
+                    accessibilityLabel = { t('toolbar.accessibilityLabel.fullScreen') }
+                    icon = { _fullScreen ? IconExitFullScreen : IconFullScreen }
+                    key = 'fullscreen'
+                    onClick = { this._onToolbarToggleFullScreen }
+                    text = { _fullScreen ? t('toolbar.exitFullScreen') : t('toolbar.enterFullScreen') } />
+                    
                     { buttonsLeft.indexOf('desktop') !== -1
                         && this._renderDesktopSharingButton() }
                     
