@@ -1332,7 +1332,7 @@ class Toolbox extends Component<Props, State> {
                         icon = { this.props._fullScreen ? IconExitFullScreen : IconFullScreen }
                         key = 'fullscreen'
                         onClick = { this._onToolbarToggleFullScreen }
-                        text = { this.props._fullScreen; ? t('toolbar.exitFullScreen') : t('toolbar.enterFullScreen') } />
+                        text = { this.props._fullScreen ? t('toolbar.exitFullScreen') : t('toolbar.enterFullScreen') } />
                     
                     
                     { buttonsLeft.indexOf('raisehand') !== -1
