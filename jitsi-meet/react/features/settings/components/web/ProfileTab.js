@@ -119,21 +119,6 @@ class ProfileTab extends AbstractDialogTab<Props> {
                             type = 'text'
                             value = { email } />
                     </div>
-                    <div className = 'profile-edit-field'>
-                        <FieldTextStateless
-                            compact = { true }
-                            id = 'setEmail'
-                            label = { t('profile.setEmailLabel') }
-                            // eslint-disable-next-line react/jsx-no-bind
-                            onChange = {
-                                ({ target: { value } }) =>
-                                    super._onChange({ email: value })
-                            }
-                            placeholder = 'Hilfin'
-                            shouldFitContainer = { true }
-                            type = 'text'
-                            value = { email } />
-                    </div>
                 </div>
                 { authEnabled && this._renderAuth() }
             </div>

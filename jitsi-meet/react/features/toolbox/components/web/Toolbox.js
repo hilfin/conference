@@ -1320,17 +1320,17 @@ class Toolbox extends Component<Props, State> {
                     { buttonsLeft.indexOf('desktop') !== -1
                         && this._renderDesktopSharingButton() }
                     
-                    
-                        <OverflowMenuProfileItem
-                        key = 'profile'
-                        onClick = { this._onToolbarToggleProfile } />
-                 <OverflowMenuVideoQualityItem
-                        key = 'videoquality'
-                        onClick = { this._onToolbarOpenVideoQuality } />
+                    <MuteEveryoneButton
+                key = 'mute-everyone'
+                showLabel = { false }
+                visible = { this._shouldShowButton('mute-everyone') } />
+                        
+                 
                 <OverflowMenuItem
                         accessibilityLabel = { t('toolbar.accessibilityLabel.fullScreen') }
                         icon = { this.props._fullScreen ? IconExitFullScreen : IconFullScreen }
                         key = 'fullscreen'
+                        showLabel = { false }
                         onClick = { this._onToolbarToggleFullScreen }
                         text = { this.props._fullScreen ? t('toolbar.exitFullScreen') : t('toolbar.enterFullScreen') } />
                     
@@ -1365,6 +1365,15 @@ class Toolbox extends Component<Props, State> {
                     <RecordButton
                                 key = 'record'
                                 showLabel = { false } />
+                    <OverflowMenuVideoQualityItem
+                        key = 'videoquality'
+                        showLabel = { false }
+                        onClick = { this._onToolbarOpenVideoQuality } />
+
+                    <OverflowMenuProfileItem
+                        key = 'profile'
+                        onClick = { this._onToolbarToggleProfile }
+                        showLabel = { false } />    
                     <SettingsButton
                             key = 'settings'
                             showLabel = { false }
