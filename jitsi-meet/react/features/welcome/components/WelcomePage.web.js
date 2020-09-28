@@ -192,7 +192,7 @@ class WelcomePage extends AbstractWelcomePage {
 
 <div className="main">
             <div className="height" id='welcome_page'>
-            <div className="left">
+            <div className="leftdiv">
               <div className="logo">
                 
                  <div className = 'welcome-watermark'>
@@ -220,7 +220,7 @@ class WelcomePage extends AbstractWelcomePage {
         
         
         
-            <div className="right">
+            <div className="rightdiv">
             <div className = 'welcome-page-settings'>
                         <SettingsButton
                             defaultTab = { SETTINGS_TABS.CALENDAR } />
@@ -235,6 +235,10 @@ class WelcomePage extends AbstractWelcomePage {
               <div className="header-time">
               <h1>{ currentTimeInfo[0]}</h1>
     <p>{currentTimeInfo[1]+ ','+currentTimeInfo[2]+ ' '+ currentTimeInfo[3] }</p>
+             
+                    <h1>
+                        Hi User,
+                    </h1>
               </div>
               <br/>
               <div className="header-icons">
