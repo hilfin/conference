@@ -1326,13 +1326,13 @@ class Toolbox extends Component<Props, State> {
                 visible = { this._shouldShowButton('mute-everyone') } />
                         
                  
-                <OverflowMenuItem
+                {/* <OverflowMenuItem
                         accessibilityLabel = { t('toolbar.accessibilityLabel.fullScreen') }
                         icon = { this.props._fullScreen ? IconExitFullScreen : IconFullScreen }
                         key = 'fullscreen'
                         showLabel = { false }
                         onClick = { this._onToolbarToggleFullScreen }
-                        text = { this.props._fullScreen ? t('toolbar.exitFullScreen') : t('toolbar.enterFullScreen') } />
+                        text = '' /> */}
                     
                     
                     { buttonsLeft.indexOf('raisehand') !== -1
@@ -1365,7 +1365,7 @@ class Toolbox extends Component<Props, State> {
                     <RecordButton
                                 key = 'record'
                                 showLabel = { false } />
-                    <OverflowMenuVideoQualityItem
+                    {/* <OverflowMenuVideoQualityItem
                         key = 'videoquality'
                         showLabel = { false }
                         onClick = { this._onToolbarOpenVideoQuality } />
@@ -1373,7 +1373,7 @@ class Toolbox extends Component<Props, State> {
                     <OverflowMenuProfileItem
                         key = 'profile'
                         onClick = { this._onToolbarToggleProfile }
-                        showLabel = { false } />    
+                        showLabel = { false } />     */}
                     <SettingsButton
                             key = 'settings'
                             showLabel = { false }
